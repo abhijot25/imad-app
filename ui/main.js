@@ -33,7 +33,7 @@ function cM()
 	}
 function c1()
 	{
-		document.getElementById("txt").value="1";
+		document.getElementById("txt").value+="1";
 	}
 function c2()
 	{
@@ -61,13 +61,10 @@ function cE()
 	}
 function cE()
 	{
-	
+		var a=eval(document.getElementById("txt").value);
+		document.getElementById("txt").value=a;
 	}
 function cD()
 	{
 		document.getElementById("txt").value+="/";
-	}
-function focus()
-	{
-		document.getElementById("txt").focus();
 	}
