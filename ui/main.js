@@ -61,8 +61,7 @@ function cE()
 	}
 function cE()
 	{
-		var a=eval(document.getElementById("txt").value);
-		document.getElementById("txt1").value=a;
+	
 	}
 function cD()
 	{
