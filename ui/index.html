@@ -11,7 +11,117 @@
         <div class="center text-big bold">
             Hi! I am Abhijot singh .
         </div>
+        
+        <form>
+<table border="10">
+<tr>
+<td colspan="4"><input type="text" placeholder="Final Result..." id="txt1"></td>
+</tr>
+<tr>
+<td colspan="4"><input type="text" placeholder="Put Numbers..." id="txt"></td>
+</tr>
+<tr>
+<td><input type="button" id="Seven"  value="7" onclick="c7()"></td>
+<td><input type="button" id="Eight"  value="8" onclick="c8()"></td>
+<td><input type="button" id="Nine"   value="9" onclick="c9()"></td>
+<td><input type="button" id="Plus"   value="+" onclick="cP()"></td>
+</tr>
+<tr>
+<td><input type="button" id="Four"   value="4" onclick="c4()"></td>
+<td><input type="button" id="Five"   value="5" onclick="c5()"></td>
+<td><input type="button" id="Six"    value="6" onclick="c6()"></td>
+<td><input type="button" id="Minus"  value="-" onclick="cM()"></td>
+</tr>
+<tr>
+<td><input type="button" id="One"    value="1" onclick="c1()"></td>
+<td><input type="button" id="Two"    value="2" onclick="c2()"></td>
+<td><input type="button" id="Three"  value="3" onclick="c3()"></td>
+<td><input type="button" id="Multi"  value="*" onclick="cMl()"></td>
+</tr>
+<tr>
+<td><input type="reset" id="Reset"  value="C" onclick="cR()"></td>
+<td><input type="button" id="Zero"   value="0" onclick="cZ()"></td>
+<td><input type="button" id="Equal"  value="=" onclick="cE()"></td>
+<td><input type="button" id="Divide" value="/" onclick="cD()"></td>
+</tr>
+</table>
+</form>
         <script type="text/javascript" src="/ui/main.js">
+        prompt("Try the calculator for fun")
+        function c7()
+	{
+		document.getElementById("txt").value+="7";
+	}
+function c8()
+	{
+		document.getElementById("txt").value+="8";
+	}
+function c9()
+	{
+		document.getElementById("txt").value+="9";
+	}
+function cP()
+	{
+		document.getElementById("txt").value+="+";
+	}
+function c4()
+	{
+		document.getElementById("txt").value+="4";
+	}
+function c5()
+	{
+		document.getElementById("txt").value+="5";
+	}
+function c6()
+	{
+		document.getElementById("txt").value+="6";
+	}
+function cM()
+	{
+		document.getElementById("txt").value+="-";
+	}
+function c1()
+	{
+		document.getElementById("txt").value="1";
+	}
+function c2()
+	{
+		document.getElementById("txt").value+="2";
+	}
+function c3()
+	{
+		document.getElementById("txt").value+="3";
+	}
+function cMl()
+	{
+		document.getElementById("txt").value+="*";
+	}
+function cC()
+	{
+		document.getElementById("txt").value+="C";
+	}
+function cZ()
+	{
+		document.getElementById("txt").value+="0";
+	}
+function cE()
+	{
+		document.getElementById("txt").value+="=";
+	}
+function cE()
+	{
+		var a=eval(document.getElementById("txt").value);
+		document.getElementById("txt1").value=a;
+	}
+function cD()
+	{
+		document.getElementById("txt").value+="/";
+	}
+function focus()
+	{
+		document.getElementById("txt").focus();
+	}
+	
         </script>
     </body>
 </html>
