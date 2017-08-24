@@ -26,7 +26,7 @@ console.log('Loaded!');
    };
    
 var nameInput=document.getElementById("name");
-var name=nameInput.value;
+var names=nameInput.value;
 var submit=document.getElementById('submitb');
 submit.onclick=function()
 {
