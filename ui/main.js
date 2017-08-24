@@ -25,8 +25,7 @@ console.log('Loaded!');
        request.send(null);
    };
    
-var nameInput=document.getElementById("name");
-var names=nameInput.value;
+var nameInput=document.getElementById("name").value+='';
 var submit=document.getElementById('submitb');
 submit.onclick=function()
 {
